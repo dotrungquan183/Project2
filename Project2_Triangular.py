@@ -70,7 +70,7 @@ def display_histogram(canvas_frame, hist, threshold):
 
 
 # Đọc ảnh và chuyển thành ảnh xám
-image = cv2.imread("icon//Test_Image.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("icon//NaoBo.png", cv2.IMREAD_GRAYSCALE)
 
 # Áp dụng thuật toán tam giác để tìm ngưỡng
 threshold, histogram = triangle_thresholding(image)

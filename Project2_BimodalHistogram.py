@@ -45,7 +45,7 @@ def bimodal_threshold(image):
 
 
 # Đọc ảnh và chuyển thành ảnh xám
-image = cv2.imread("icon//Test_Image.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("icon//NaoBo.png", cv2.IMREAD_GRAYSCALE)
 
 # Tính ngưỡng theo histogram bimodal
 threshold, histogram, histogram_tophat = bimodal_threshold(image)

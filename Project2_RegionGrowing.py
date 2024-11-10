@@ -56,8 +56,8 @@ def regionGrow(img, seeds, thresh):
 
 
 # Tải và xử lý ảnh
-img = cv2.imread('icon/Test_Image.png', 0)
-seeds = [Point(300, 150), Point(500, 150), Point(50, 150), Point(700, 150)]
+img = cv2.imread('icon/NaoBo.png', 0)
+seeds = [Point(124, 124), Point(283, 125), Point(407, 151), Point(327, 216)]
 img_result = regionGrow(img, seeds, 2.75)
 
 
@@ -124,4 +124,19 @@ white_box = Label(frame_legend, bg="white", width=5, height=2)
 white_box.grid(row=2, column=0, padx=10, pady=10)
 label_white = Label(frame_legend, text="Nền", font=("Arial", 12), anchor="w")
 label_white.grid(row=2, column=1, padx=10, pady=10, sticky="w")
+
+
+# Hàm để cập nhật và hiển thị tọa độ khi di chuột
+def show_coordinates(event):
+    x, y = event.x, event.y
+    coordinates_label.config(text=f"Tọa độ: ({x}, {y})")
+
+
+# Thêm một label để hiển thị tọa độ
+coordinates_label = Label(root, text="Tọa độ: (0, 0)", font=("Arial", 12))
+coordinates_label.place(x=100, y=470)
+
+# Gán sự kiện di chuột vào ảnh gốc
+label_image.bind("<Motion>", show_coordinates)
+
 root.mainloop()

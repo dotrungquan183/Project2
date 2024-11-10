@@ -37,7 +37,7 @@ def display_histogram(canvas_frame, image):
 
 
 # Bước 1: Tải ảnh và chuyển sang ảnh xám
-image = cv2.imread("icon//Test_Image.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("icon//NaoBo.png", cv2.IMREAD_GRAYSCALE)
 
 # Bước 2: Tính toán histogram của ảnh xám
 hist = cv2.calcHist([image], [0], None, [256], [0, 256])

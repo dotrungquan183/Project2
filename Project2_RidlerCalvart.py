@@ -22,7 +22,7 @@ def ridler_calvard_thresholding(image, max_iterations=1000, tolerance=1e-5):
 
 
 # Đọc ảnh và chuyển thành ảnh xám
-image = cv2.imread("icon//Test_Image.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("icon/NaoBo.png", cv2.IMREAD_GRAYSCALE)
 
 # Áp dụng thuật toán đẳng liệu để tìm ngưỡng
 threshold = ridler_calvard_thresholding(image)
