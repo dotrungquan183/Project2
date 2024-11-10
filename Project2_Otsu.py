@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Đọc ảnh PNG
-image = cv2.imread("icon/test2.tif.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("icon/PhongCanh.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Áp dụng Otsu Thresholding
 _, thresholded_image = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)

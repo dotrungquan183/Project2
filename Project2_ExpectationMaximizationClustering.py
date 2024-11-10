@@ -5,7 +5,7 @@ from sklearn.mixture import GaussianMixture
 import os
 
 # Đường dẫn tới ảnh (có thể thay thế với đường dẫn tuyệt đối nếu ảnh nằm trong thư mục của bạn)
-img_path = 'icon/Test_Image.png'
+img_path = 'icon/PhongCanh.jpg'
 
 # Kiểm tra xem ảnh có tồn tại không
 if not os.path.exists(img_path):
